@@ -4,7 +4,7 @@ const generate = require('@babel/generator').default;
 const types = require('@babel/types');
 const template = require('@babel/template').default;
 
-const sourceCode = require('./sourceCode');
+const sourceCode = require('./codeTemplate');
 
 const ast = parser.parse(sourceCode, {
   sourceType: 'unambiguous',

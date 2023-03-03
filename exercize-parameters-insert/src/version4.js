@@ -5,10 +5,8 @@ const path = require('path');
 const { code } = transformFileSync(path.join(__dirname, './sourceCode.js'), {
   plugins: [insertParametersPlugin],
   parserOpts: {
-    sourceType: {
-      sourceType: 'unambiguous',
-      plugins: ['jsx'],
-    },
+    sourceType: 'unambiguous',
+    plugins: ['jsx'],
   },
 });
 

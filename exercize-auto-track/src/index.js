@@ -12,7 +12,7 @@ const ast = parser.parse(sourceCode, {
   sourceType: 'unambiguous',
 });
 
-transformFromAstSync(ast, sourceCode, {
+const code = transformFromAstSync(ast, sourceCode, {
   plugins: [
     [
       autoTrackPlugin,
